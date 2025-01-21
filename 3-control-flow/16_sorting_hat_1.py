@@ -1,89 +1,65 @@
+
 # Sorting Hat 🧙‍♂️
-# Codédex
 
-gryffindor = 0
-hufflepuff = 0
-ravenclaw = 0
-slytherin = 0
+Grifinória = 0
+LufaLufa = 0
+Corvinal = 0
+Sonserina = 0
 
-print('===============')
-print('The Sorting Hat')
-print('===============')
+print ('O Chapéu Seletor')
 
 # ~~~~~~~~~~~~~~~ Question 1 ~~~~~~~~~~~~~~~
+print ('Q1) Você gosta de Grifinória ou Sonserina?')
 
-print('Q1) Do you like Dawn or Dusk?')
+print (' 1) Grifinória')
+print (' 2)Sonserina')
 
-print('  1) Dawn')
-print('  2) Dusk')
+Resposta = int(input('Coloque a resposta (1-2): '))
 
-answer = int(input('Enter answer (1-2): '))
-
-if answer == 1:
-  gryffindor += 1
-  ravenclaw += 1
-elif answer == 2:
-  hufflepuff += 1
-  slytherin +=1
+if Resposta == 1:
+  Grifinória += 1
+  corvinal += 1
+elif Resposta == 2:
+  Sonserina += 1
+  LufaLufa += 1
 else:
-  print('Wrong input.')
+  ('resposta errada')
 
-# ~~~~~~~~~~~~~~~ Question 2 ~~~~~~~~~~~~~~~
+  # ~~~~~~~~~~~~~~~ Question 2 ~~~~~~~~~~~~~~~
 
-print("\nQ2) When I'm dead, I want people to remember me as:")
+  print('Q2) qual a melhor casa')
 
-print('  1) The Good')
-print('  2) The Great')
-print('  3) The Wise')
-print('  4) The Bold')
+  print ('1)Grifinória')
+  print('2)Sonserina')
+  print('3)LufaLufa')
+  print('4)Corvinal')
 
-answer = int(input('Enter your answer (1-4): '))
+  Resposta = int(input('Coloque sua resposta (1-4): '))
 
-if answer == 1:
-  hufflepuff += 2
-elif answer == 2:
-  slytherin += 2
-elif answer == 3:
-  ravenclaw += 2
-elif answer == 4:
-  gryffindor += 2
+if Resposta == 1:
+ Lufalufa += 2
+elif Resposta == 2:
+ Sonserina += 2
+elif Resposta == 3:
+ Corvinal += 2
+elif Resposta == 4:
+ Grifinória += 2
 else:
-  print('Wrong input.')
+ print('Resposta Errada.')
 
-# ~~~~~~~~~~~~~~~ Question 3 ~~~~~~~~~~~~~~~
+print("Grifinória: ", Grifinória)
+print("Corvinal: ", Corvinal)
+print("Lufalufa: ", Lufalufa)
+print("Sonserina:", Sonserina)
 
-print('\nQ3) Which kind of instrument most pleases your ear?')
 
-print('  1) The violin')
-print('  2) The trumpet')
-print('  3) The piano')
-print('  4) The drum')
 
-answer = int(input('Enter your answer (1-4): '))
 
-if answer == 1:
-  slytherin += 4
-elif answer == 2:
-  hufflepuff += 4
-elif answer == 3:
-  ravenclaw +=4
-elif answer == 4:
-  gryffindor += 4
+ if Grifinória >= Corvinal and Grifinória >= Lufalufa and Grifinória >= Sonserina:
+  print('🦁 Grifinória!')
+elif Corvinal >= Lufalufa and Corvinal >= Sonserina:
+  print('🦅 Corvinal!')
+elif Lufalufa >= Sonserina:
+  print('🦡 Lufalufa!')
 else:
-  print('Wrong input.')
-  
-print("Gryffindor: ", gryffindor)
-print("Ravenclaw: ", ravenclaw)
-print("Hufflepuff: ", hufflepuff)
-print("Slytherin: ", slytherin)
-
-# Bonus Part
-
-if gryffindor >= ravenclaw and gryffindor >= hufflepuff and gryffindor >= slytherin:
-  print('🦁 Gryffindor!')
-elif ravenclaw >= hufflepuff and ravenclaw >= slytherin:
-  print('🦅 Ravenclaw!')
-elif hufflepuff >= slytherin:
-  print('🦡 Hufflepuff!')
-else:
-  print('🐍 Slytherin!')
+  print('🐍 Sonserina!')
